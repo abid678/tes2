@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">    
+</head>
+<body>
+
+<br>
+
+
+<form id="from" name="calculator">
+<p style="margin:10px; padding:10px;"><a href="https://www.facebook.com/im.abid1234" style="text-decoration:none; color:black;">abidur rahman</a></p>
+<input id="input"  type="text" name="display" disabled >
+<br/>
+
+<hr>
+
+<input class="btn" type="button" value="7" onclick="calculator.display.value += '7'" >
+
+
+<input class="btn" type="button" value="8" onclick="calculator.display.value += '8'" >
+
+
+<input class="btn" type="button" value="9" onclick="calculator.display.value += '9'" >
+
+<input class="btn" type="button" value="+" onclick="calculator.display.value += '+'" >
+
+<br>
+
+<input class="btn" type="button" value="4" onclick="calculator.display.value += '4'" >
+
+<input class="btn" type="button" value="5" onclick="calculator.display.value += '5'" >
+
+
+<input class="btn" type="button" value="6" onclick="calculator.display.value += '6'" >
+
+
+<input class="btn" type="button" value="-" onclick="calculator.display.value += '-'" >
+
+<br>
+
+<input class="btn" type="button" value="1" onclick="calculator.display.value += '1'" >
+
+
+<input class="btn" type="button" value="2" onclick="calculator.display.value += '2'" >
+
+
+<input class="btn" type="button" value="3" onclick="calculator.display.value += '3'" >
+
+
+<input class="btn" type="button" value="* (×)" onclick="calculator.display.value += '*'" >
+
+<br>
+
+<input class="btn" type="button" value="." onclick="calculator.display.value += '.'" >
+
+
+<input class="btn" type="button" value="0" onclick="calculator.display.value += '0'" >
+
+
+<input class="btn" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)" >
+
+
+
+<input class="btn" type="button" value="/ (÷)" onclick="calculator.display.value += '/'">
+
+
+<div id="div1">
+
+<input style="width:35%;" class="btn" type="button" value="&crarr; del" onclick="calculator.display.value = calculator.display.value.slice(0,-1)" >
+
+
+
+
+
+<input style="width:35%;" class="btn" type="button"  value="clr" onclick="calculator.display.value = ''" >
+
+
+<input class="btn" type="button"  value="&radic;" onclick="calculator.display.value = Math.sqrt(calculator.display.value) " >
+
+</div>
+
+
+</form>
+
+
+
+
+<script src="index.js"></script>    
+</body>
+</html>
